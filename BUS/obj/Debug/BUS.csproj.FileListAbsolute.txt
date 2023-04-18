@@ -1,0 +1,33 @@
+D:\BTL Winform\Cao_Van_Dan\BUS\bin\Debug\BUS.dll
+D:\BTL Winform\Cao_Van_Dan\BUS\bin\Debug\BUS.pdb
+D:\BTL Winform\Cao_Van_Dan\BUS\bin\Debug\DAL.dll
+D:\BTL Winform\Cao_Van_Dan\BUS\bin\Debug\Entities.dll
+D:\BTL Winform\Cao_Van_Dan\BUS\bin\Debug\DAL.pdb
+D:\BTL Winform\Cao_Van_Dan\BUS\bin\Debug\Entities.pdb
+D:\BTL Winform\Cao_Van_Dan\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\BTL Winform\Cao_Van_Dan\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\BTL Winform\Cao_Van_Dan\BUS\obj\Debug\BUS.dll
+D:\BTL Winform\Cao_Van_Dan\BUS\obj\Debug\BUS.pdb
+D:\BTL Winform\Cao_Van_Dan\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\BUS\bin\Debug\BUS.dll
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\BUS\bin\Debug\BUS.pdb
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\BUS\bin\Debug\DAL.dll
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\BUS\bin\Debug\Entities.dll
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\BUS\bin\Debug\DAL.pdb
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\BUS\bin\Debug\Entities.pdb
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\BUS\obj\Debug\BUS.dll
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\BUS\obj\Debug\BUS.pdb
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\bin\Debug\BUS.dll
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\bin\Debug\BUS.pdb
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\bin\Debug\DAL.dll
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\bin\Debug\DAL.pdb
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\obj\Debug\BUS.dll
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\obj\Debug\BUS.pdb
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\bin\Debug\DTO.dll
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\bin\Debug\DTO.pdb

@@ -1,0 +1,27 @@
+D:\BTL Winform\Cao_Van_Dan\DAL\bin\Debug\DAL.dll
+D:\BTL Winform\Cao_Van_Dan\DAL\bin\Debug\DAL.pdb
+D:\BTL Winform\Cao_Van_Dan\DAL\bin\Debug\Entities.dll
+D:\BTL Winform\Cao_Van_Dan\DAL\bin\Debug\Entities.pdb
+D:\BTL Winform\Cao_Van_Dan\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\BTL Winform\Cao_Van_Dan\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\BTL Winform\Cao_Van_Dan\DAL\obj\Debug\DAL.dll
+D:\BTL Winform\Cao_Van_Dan\DAL\obj\Debug\DAL.pdb
+D:\BTL Winform\Cao_Van_Dan\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\DAL\bin\Debug\DAL.dll
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\DAL\bin\Debug\DAL.pdb
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\DAL\bin\Debug\Entities.dll
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\DAL\bin\Debug\Entities.pdb
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\DAL\obj\Debug\DAL.dll
+C:\Users\PC\OneDrive\Máy tính\New folder (2)\BTL Winform\Cao_Van_Dan\DAL\obj\Debug\DAL.pdb
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\DAL\bin\Debug\DAL.dll
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\DAL\bin\Debug\DAL.pdb
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\DAL\obj\Debug\DAL.dll
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\DAL\obj\Debug\DAL.pdb
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\DAL\bin\Debug\DTO.dll
+C:\luyenhaidangit.github.io\refrigerators-store-manage-app\DAL\bin\Debug\DTO.pdb
