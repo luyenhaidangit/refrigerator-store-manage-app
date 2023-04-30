@@ -31,3 +31,14 @@ C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\obj\Debug\BUS.dll
 C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\obj\Debug\BUS.pdb
 C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\bin\Debug\DTO.dll
 C:\luyenhaidangit.github.io\refrigerators-store-manage-app\BUS\bin\Debug\DTO.pdb
+C:\luyenhaidangit\refrigerator-store-manage-app\BUS\bin\Debug\BUS.dll
+C:\luyenhaidangit\refrigerator-store-manage-app\BUS\bin\Debug\BUS.pdb
+C:\luyenhaidangit\refrigerator-store-manage-app\BUS\bin\Debug\DAL.dll
+C:\luyenhaidangit\refrigerator-store-manage-app\BUS\bin\Debug\DTO.dll
+C:\luyenhaidangit\refrigerator-store-manage-app\BUS\bin\Debug\DAL.pdb
+C:\luyenhaidangit\refrigerator-store-manage-app\BUS\bin\Debug\DTO.pdb
+C:\luyenhaidangit\refrigerator-store-manage-app\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\luyenhaidangit\refrigerator-store-manage-app\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\luyenhaidangit\refrigerator-store-manage-app\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\luyenhaidangit\refrigerator-store-manage-app\BUS\obj\Debug\BUS.dll
+C:\luyenhaidangit\refrigerator-store-manage-app\BUS\obj\Debug\BUS.pdb

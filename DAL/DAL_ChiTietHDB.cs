@@ -23,21 +23,21 @@ namespace DAL
         public bool ThemCTHDB(ChiTietHoaDonBan CT)
         {
             string sql = string.Format("Insert into ChiTietHDB Values ('{0}', '{1}', '{2}', '{3}', '{4}')", CT.MaHDB, CT.SoNha, CT.DonGia, CT.GiamGia, CT.ThanhTien);
-            string TTCanHo = string.Format("Update SanPham Set TinhTrang = N'Đã Bán' Where SoNha = '" + CT.SoNha + "'");
+            string TTCanHo = string.Format("Update SanPham Set TinhTrang = N'Hoạt động' Where MaSanPham = '" + CT.SoNha + "'");
             thucthisql(sql);
             thucthisql(TTCanHo);
             return true;
         }
         public bool SuaCTHDB(ChiTietHoaDonBan CT)
         {
-            string sql = string.Format("Update ChiTietHDB Set MaHDB = '{0}' Where SoNha = '{1}', DonGia = '{2}', GiamGia = '{3}', ThanhTien = '{4}'", CT.MaHDB, CT.SoNha, CT.DonGia, CT.GiamGia, CT.ThanhTien);
+            string sql = string.Format("Update ChiTietHDB Set MaHDB = '{0}' Where MaSanPham = '{1}', DonGia = '{2}', GiamGia = '{3}', ThanhTien = '{4}'", CT.MaHDB, CT.SoNha, CT.DonGia, CT.GiamGia, CT.ThanhTien);
             thucthisql(sql);
             return true;
         }
         public bool XoaCTHDB(string ma)
         {
             string sql = "Delete from ChiTietHDB where MaHDB = '" + ma.Trim() + "'";
-            string TTCanHo = string.Format("Update SanPham Set TinhTrang = N'Còn' Where SoNha = '" + ma.Trim() + "'");
+            string TTCanHo = string.Format("Update SanPham Set TinhTrang = N'Hoạt động' Where MaSanPham = '" + ma.Trim() + "'");
             thucthisql(sql);
             thucthisql(TTCanHo);
             return true;
@@ -59,12 +59,12 @@ namespace DAL
             if (sonha.Trim() != "" && dk != "")
             {
                 // 3
-                dk += " and SoNha like '%" + sonha.Trim() + "%'";
+                dk += " and MaSanPham like '%" + sonha.Trim() + "%'";
             }
             if (sonha.Trim() != "" && dk == "")
             {
                 // 4
-                dk += "SoNha like '%" + sonha.Trim() + "%'";
+                dk += "MaSanPham like '%" + sonha.Trim() + "%'";
             }
             if (dk != "")
             {
@@ -79,12 +79,12 @@ namespace DAL
         }
         public DataTable ThongKeHoaDonTheoThang(string thang, string nam)
         {
-            string sql = string.Format("Select H.MaHDB, H.MaNV, H.MaKH, h.NgayBan, C.SoNha, C.DonGia, C.GiamGia, C.ThanhTien from HoaDonBan H inner join ChiTietHDB C on H.MaHDB = C.MaHDB Where Month(ngayban) = " + thang.Trim() + " and Year(ngayban) = " + nam.Trim() + "");
+            string sql = string.Format("Select H.MaHDB, H.MaNV, H.MaKH, h.NgayBan, C.MaSanPham, C.DonGia, C.GiamGia, C.ThanhTien from HoaDonBan H inner join ChiTietHDB C on H.MaHDB = C.MaHDB Where Month(ngayban) = " + thang.Trim() + " and Year(ngayban) = " + nam.Trim() + "");
             return connect.getData(sql);
         }
         public DataTable ThongKeHoaDonTheoNam(string nam)
         {
-            string sql = string.Format("Select H.MaHDB, H.MaNV, H.MaKH, h.NgayBan, C.SoNha, C.DonGia, C.GiamGia, C.ThanhTien from HoaDonBan H inner join ChiTietHDB C on H.MaHDB = C.MaHDB Where Year(ngayban) = " + nam.Trim() + "");
+            string sql = string.Format("Select H.MaHDB, H.MaNV, H.MaKH, h.NgayBan, C.MaSanPham, C.DonGia, C.GiamGia, C.ThanhTien from HoaDonBan H inner join ChiTietHDB C on H.MaHDB = C.MaHDB Where Year(ngayban) = " + nam.Trim() + "");
             return connect.getData(sql);
         }
         public double ThongKeDoanhThuTheoNam(string nam)

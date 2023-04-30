@@ -41,9 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CanHo.cs" />
+    <Compile Include="SanPham.cs" />
     <Compile Include="ChiTietHoaDonBan.cs" />
-    <Compile Include="DayCanHo.cs" />
+    <Compile Include="LoaiSanPham.cs" />
     <Compile Include="HoaDon.cs" />
     <Compile Include="KhachHang.cs" />
     <Compile Include="NhanVien.cs" />

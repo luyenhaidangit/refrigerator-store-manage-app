@@ -75,6 +75,8 @@ namespace Cao_Van_Dan
             this.mnTimKiem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnBCTK = new System.Windows.Forms.ToolStripMenuItem();
             this.pbThoat = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtTen = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -178,6 +180,8 @@ namespace Cao_Van_Dan
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtTen);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.cbbDayCH);
             this.groupBox1.Controls.Add(this.txtDienTich);
             this.groupBox1.Controls.Add(this.label7);
@@ -198,7 +202,7 @@ namespace Cao_Van_Dan
             // cbbDayCH
             // 
             this.cbbDayCH.FormattingEnabled = true;
-            this.cbbDayCH.Location = new System.Drawing.Point(615, 23);
+            this.cbbDayCH.Location = new System.Drawing.Point(630, 84);
             this.cbbDayCH.Name = "cbbDayCH";
             this.cbbDayCH.Size = new System.Drawing.Size(153, 21);
             this.cbbDayCH.TabIndex = 5;
@@ -206,7 +210,7 @@ namespace Cao_Van_Dan
             // txtDienTich
             // 
             this.txtDienTich.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDienTich.Location = new System.Drawing.Point(342, 21);
+            this.txtDienTich.Location = new System.Drawing.Point(630, 23);
             this.txtDienTich.Name = "txtDienTich";
             this.txtDienTich.Size = new System.Drawing.Size(151, 22);
             this.txtDienTich.TabIndex = 11;
@@ -216,7 +220,7 @@ namespace Cao_Van_Dan
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Blue;
-            this.label7.Location = new System.Drawing.Point(272, 23);
+            this.label7.Location = new System.Drawing.Point(529, 26);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 16);
             this.label7.TabIndex = 10;
@@ -267,7 +271,7 @@ namespace Cao_Van_Dan
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(514, 24);
+            this.label4.Location = new System.Drawing.Point(529, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 16);
             this.label4.TabIndex = 4;
@@ -551,6 +555,25 @@ namespace Cao_Van_Dan
             this.pbThoat.TabStop = false;
             this.pbThoat.Click += new System.EventHandler(this.pbThoat_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Blue;
+            this.label10.Location = new System.Drawing.Point(266, 29);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(72, 16);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Tên tủ lạnh";
+            // 
+            // txtTen
+            // 
+            this.txtTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTen.Location = new System.Drawing.Point(344, 23);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(151, 22);
+            this.txtTen.TabIndex = 13;
+            // 
             // GUI_SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -630,6 +653,8 @@ namespace Cao_Van_Dan
         private System.Windows.Forms.ToolStripMenuItem mnTimKiem;
         private System.Windows.Forms.ToolStripMenuItem mnBCTK;
         private System.Windows.Forms.PictureBox pbThoat;
+        private System.Windows.Forms.TextBox txtTen;
+        private System.Windows.Forms.Label label10;
     }
 }
 

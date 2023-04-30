@@ -15,7 +15,7 @@ namespace DAL
         public SqlDataAdapter da;
         public SqlDataReader dr;
         public DataTable dt;
-        string chuoikn = @"Data Source=LAPTOP-3KE0ADA0;Initial Catalog=BTL_Winform;Integrated Security=True";
+        string chuoikn = @"Data Source=DESKTOP-8T39K7H;Initial Catalog=BTL_Winform;Integrated Security=True";
         public void ketnoi()
         {
             con = new SqlConnection(chuoikn);

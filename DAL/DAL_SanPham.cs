@@ -21,46 +21,46 @@ namespace DAL
         }
         public int kiemtramatrung(string ma)
         {
-            string sql = "Select count(*) from SanPham where SoNha = '" + ma.Trim() + "'";
+            string sql = "Select count(*) from SanPham where MaSanPham = '" + ma.Trim() + "'";
             return connect.kiemtramatrung(ma, sql);
         }
-        public bool ThemCH(CanHo ch)
+        public bool ThemCH(SanPham ch)
         {
-            string sql = string.Format("Insert into SanPham values('{0}','{1}', '{2}', N'{3}', '{4}')", ch.SoNha, ch.DienTich, ch.GiaBan, ch.TinhTrang, ch.MaDay);
+            string sql = string.Format("Insert into SanPham values('{0}',N'{1}', '{2}', N'{3}', N'{4}','{5}')", ch.MaSanPham, ch.TenSanPham, ch.DungTich, ch.GiaBan, ch.TinhTrang,ch.MaLoaiSanPham);
             thucthisql(sql);
             return true;
         }
-        public bool SuaCH(CanHo ch)
+        public bool SuaCH(SanPham ch)
         {
-            string sql = string.Format("Update SanPham set DienTich = '{1}', GiaBan = '{2}', TinhTrang = '{3}', MaDay = '{4}' Where SoNha = '{0}' ", ch.SoNha, ch.DienTich, ch.GiaBan, ch.TinhTrang, ch.MaDay);
+            string sql = string.Format("Update SanPham set TenSanPham = N'{1}', DungTich = '{2}', GiaBan = '{3}', TinhTrang = N'{4}',MaLoaiSanPham = '{5}' Where MaSanPham = '{0}' ", ch.MaSanPham,ch.TenSanPham, ch.DungTich, ch.GiaBan, ch.TinhTrang, ch.MaLoaiSanPham);
             thucthisql(sql);
             return true;
         }
         public bool XoaCH(string ma)
         {
-            string sql = "DELETE from SanPham Where SoNha = '" + ma.Trim() + "'";
+            string sql = "DELETE from SanPham Where MaSanPham = '" + ma.Trim() + "'";
             thucthisql(sql);
             return true;
         }
-        public DataTable TimKiemCH(string SoNha, string DienTich, string GiaBan)
+        public DataTable TimKiemCH(string maSanPHam, string DungTich, string GiaBan)
         {
             string sql = "Select * from SanPham";
             string dk = "";
-            if(SoNha.Trim() == "" && DienTich.Trim() == "" && GiaBan.Trim() == "")
+            if (maSanPHam.Trim() == "" && DungTich.Trim() == "" && GiaBan.Trim() == "")
             {
                 return null;
             }
-            if(SoNha.Trim() != "" && dk == "")
+            if (maSanPHam.Trim() != "" && dk == "")
             {
-                dk += " SoNha like '%" + SoNha.Trim() + "%'";
+                dk += " MaSanPham like '%" + maSanPHam.Trim() + "%'";
             }
-            if(DienTich.Trim() != "" && dk != "")
+            if (DungTich.Trim() != "" && dk != "")
             {
-                dk += " and DienTich between  " + DienTich + " - 5 and " + DienTich + " + 5";
+                dk += " and DungTich between  " + DungTich + " - 5 and " + DungTich + " + 5";
             }
-            if (DienTich.Trim() != "" && dk == "")
+            if (DungTich.Trim() != "" && dk == "")
             {
-                dk += " DienTich between  " + DienTich + " - 5 and " + DienTich + " + 5";
+                dk += " DungTich between  " + DungTich + " - 5 and " + DungTich + " + 5";
             }
             if (GiaBan.Trim() != "" && dk != "")
             {
@@ -74,6 +74,7 @@ namespace DAL
             {
                 sql += " Where " + dk;
             }
+            //string sql = "Select * from SanPham where masanpham = 'CH01'";
             return connect.getData(sql);
         }
     }

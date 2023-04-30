@@ -25,3 +25,12 @@ C:\luyenhaidangit.github.io\refrigerators-store-manage-app\DAL\obj\Debug\DAL.dll
 C:\luyenhaidangit.github.io\refrigerators-store-manage-app\DAL\obj\Debug\DAL.pdb
 C:\luyenhaidangit.github.io\refrigerators-store-manage-app\DAL\bin\Debug\DTO.dll
 C:\luyenhaidangit.github.io\refrigerators-store-manage-app\DAL\bin\Debug\DTO.pdb
+C:\luyenhaidangit\refrigerator-store-manage-app\DAL\bin\Debug\DAL.dll
+C:\luyenhaidangit\refrigerator-store-manage-app\DAL\bin\Debug\DAL.pdb
+C:\luyenhaidangit\refrigerator-store-manage-app\DAL\bin\Debug\DTO.dll
+C:\luyenhaidangit\refrigerator-store-manage-app\DAL\bin\Debug\DTO.pdb
+C:\luyenhaidangit\refrigerator-store-manage-app\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\luyenhaidangit\refrigerator-store-manage-app\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\luyenhaidangit\refrigerator-store-manage-app\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\luyenhaidangit\refrigerator-store-manage-app\DAL\obj\Debug\DAL.dll
+C:\luyenhaidangit\refrigerator-store-manage-app\DAL\obj\Debug\DAL.pdb

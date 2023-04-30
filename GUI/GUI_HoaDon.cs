@@ -35,7 +35,7 @@ namespace Cao_Van_Dan
             dgvcthdb.Columns[1].HeaderText = "Số sản phẩm";
             dgvcthdb.Columns[2].HeaderText = "Đơn giá";
             dgvcthdb.Columns[3].HeaderText = "Giảm giá";
-            dgvcthdb.Columns[3].HeaderText = "Thành tiền";
+            dgvcthdb.Columns[4].HeaderText = "Thành tiền";
         }
         void loadcbbNV()
         {
@@ -53,10 +53,11 @@ namespace Cao_Van_Dan
         {
             dgvcthdb.DataSource = bus_ch.TimKiem(ma, dt, gb);
             dgvcthdb.Columns[0].HeaderText = "Mã sản phẩm";
-            dgvcthdb.Columns[1].HeaderText = "Diện tích";
-            dgvcthdb.Columns[2].HeaderText = "Giá bán";
-            dgvcthdb.Columns[3].HeaderText = "Tình trạng";
-            dgvcthdb.Columns[4].HeaderText = "Mã loại sản phẩm";
+            dgvcthdb.Columns[1].HeaderText = "Tên sản phẩm";
+            dgvcthdb.Columns[2].HeaderText = "Dung tích";
+            dgvcthdb.Columns[3].HeaderText = "Giá bán";
+            dgvcthdb.Columns[4].HeaderText = "Tình trạng";
+            dgvcthdb.Columns[5].HeaderText = "Mã loại sản phẩm";
         }
         public GUI_HoaDon()
         {
@@ -218,7 +219,7 @@ namespace Cao_Van_Dan
             hd.ThanhTien = float.Parse(txtthanhtien.Text);
             if (bus_cthdb.kiemtramatrung(txtSoNha.Text) > 0)
             {
-                MessageBox.Show("Sản phẩm có mã "+ txtSoNha.Text + " đã được bán! Vui lòng nhập số nhà khác!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Sản phẩm có mã "+ txtSoNha.Text + " đã được bán! Vui lòng nhập sản phẩm khác!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -262,10 +263,10 @@ namespace Cao_Van_Dan
         private void dgvcthdb_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int i = e.RowIndex;
-            txtSoNha.Text = dgvHoaDonBan[0, i].Value.ToString();
-            txtdongia.Text = dgvHoaDonBan[1, i].Value.ToString();
-            txtgiamgia.Text = dgvHoaDonBan[2, i].Value.ToString();
-            txtthanhtien.Text = dgvHoaDonBan[3, i].Value.ToString();
+            txtSoNha.Text = dgvcthdb[1, i].Value.ToString();
+            txtdongia.Text = dgvcthdb[2, i].Value.ToString();
+            txtgiamgia.Text = (0).ToString();
+            txtthanhtien.Text = dgvcthdb[2, i].Value.ToString();
         }
 
         private void txtSoNha_TextChanged(object sender, EventArgs e)
@@ -281,7 +282,7 @@ namespace Cao_Van_Dan
             float dongia = float.Parse(txtdongia.Text);
             if (giamgia != "")
             {
-                txtthanhtien.Text = (dongia - (float.Parse(giamgia) * dongia)).ToString();
+                txtthanhtien.Text = (dongia - (float.Parse(giamgia) * dongia)/100).ToString();
             }
         }
 
@@ -300,6 +301,11 @@ namespace Cao_Van_Dan
             }
 
             base.OnFormClosing(e);
+        }
+
+        private void dgvcthdb_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

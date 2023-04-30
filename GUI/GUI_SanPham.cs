@@ -20,16 +20,17 @@ namespace Cao_Van_Dan
         {
             dgvSanPham.DataSource = bus_ch.getData();
             dgvSanPham.Columns[0].HeaderText = "Mã sản phẩm";
-            dgvSanPham.Columns[1].HeaderText = "Dung tích";
-            dgvSanPham.Columns[2].HeaderText = "Giá bán";
-            dgvSanPham.Columns[3].HeaderText = "Tình trạng";
-            dgvSanPham.Columns[4].HeaderText = "Mã loại sản phẩm";
+            dgvSanPham.Columns[1].HeaderText = "Tên sản phẩm";
+            dgvSanPham.Columns[2].HeaderText = "Dung tích";
+            dgvSanPham.Columns[3].HeaderText = "Giá bán";
+            dgvSanPham.Columns[4].HeaderText = "Tình trạng";
+            dgvSanPham.Columns[5].HeaderText = "Mã loại sản phẩm";
         }
         void loadcbb()
         {
             cbbDayCH.DataSource = bus_dch.getData();
-            cbbDayCH.DisplayMember = "TenDay";
-            cbbDayCH.ValueMember = "MaDay";
+            cbbDayCH.DisplayMember = "TenLoaiSanPham";
+            cbbDayCH.ValueMember = "MaLoaiSanPham";
         }
         
         public GUI_SanPham()
@@ -55,10 +56,11 @@ namespace Cao_Van_Dan
         {
             int i = e.RowIndex;
             txtSoNha.Text = dgvSanPham[0, i].Value.ToString();
-            cbbDayCH.Text = bus_dch.valuecbbDCH(dgvSanPham[4, i].Value.ToString());
-            txtTT.Text = dgvSanPham[3, i].Value.ToString();
-            txtDG.Text = dgvSanPham[2, i].Value.ToString();
-            txtDienTich.Text = dgvSanPham[1, i].Value.ToString();
+            cbbDayCH.Text = bus_dch.valuecbbDCH(dgvSanPham[5, i].Value.ToString());
+            txtTT.Text = dgvSanPham[4, i].Value.ToString();
+            txtDG.Text = dgvSanPham[3, i].Value.ToString();
+            txtDienTich.Text = dgvSanPham[2, i].Value.ToString();
+            txtTen.Text = dgvSanPham[1, i].Value.ToString();
         }
 
         private void btnMoi_Click(object sender, EventArgs e)
@@ -74,10 +76,11 @@ namespace Cao_Van_Dan
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            CanHo ch = new CanHo();
-            ch.SoNha = txtSoNha.Text;
-            ch.MaDay = cbbDayCH.SelectedValue.ToString();
-            ch.DienTich = float.Parse(txtDienTich.Text);
+            SanPham ch = new SanPham();
+            ch.MaSanPham = txtSoNha.Text;
+            ch.TenSanPham = txtTen.Text;
+            ch.MaLoaiSanPham = cbbDayCH.SelectedValue.ToString();
+            ch.DungTich = float.Parse(txtDienTich.Text);
             ch.TinhTrang = txtTT.Text;
             ch.GiaBan = float.Parse(txtDG.Text);
             if (bus_ch.kiemtramatrung(txtSoNha.Text) == 1)
@@ -96,10 +99,11 @@ namespace Cao_Van_Dan
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            CanHo ch = new CanHo();
-            ch.SoNha = txtSoNha.Text;
-            ch.MaDay = cbbDayCH.SelectedValue.ToString();
-            ch.DienTich = float.Parse(txtDienTich.Text);
+            SanPham ch = new SanPham();
+            ch.MaSanPham = txtSoNha.Text;
+            ch.TenSanPham = txtTen.Text;
+            ch.MaLoaiSanPham = cbbDayCH.SelectedValue.ToString();
+            ch.DungTich = float.Parse(txtDienTich.Text);
             ch.TinhTrang = txtTT.Text;
             ch.GiaBan = float.Parse(txtDG.Text);
             if (bus_ch.SuaCH(ch) == true)
@@ -134,19 +138,21 @@ namespace Cao_Van_Dan
             }
             else
             {
+                //dgvSanPham.DataSource = bus_ch.getData();
                 dgvSanPham.Columns[0].HeaderText = "Mã sản phẩm";
-                dgvSanPham.Columns[1].HeaderText = "Dung tích";
-                dgvSanPham.Columns[2].HeaderText = "Giá bán";
-                dgvSanPham.Columns[3].HeaderText = "Tình trạng";
-                dgvSanPham.Columns[4].HeaderText = "Mã loại sản phẩm";
+                dgvSanPham.Columns[1].HeaderText = "Tên sản phẩm";
+                dgvSanPham.Columns[2].HeaderText = "Dung tích";
+                dgvSanPham.Columns[3].HeaderText = "Giá bán";
+                dgvSanPham.Columns[4].HeaderText = "Tình trạng";
+                dgvSanPham.Columns[5].HeaderText = "Mã loại sản phẩm";
             }
         }
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            string sonha = txtTimKiemsonha.Text;
-            string dientich = txtTimKiemdtch.Text;
-            string giaban = txtTimKiemgbch.Text;
-            loaddgvTimKiemSP(sonha, dientich, giaban);
+            string maSanPham = txtTimKiemsonha.Text;
+            string dungTich = txtTimKiemdtch.Text;
+            string giaBan = txtTimKiemgbch.Text;
+            loaddgvTimKiemSP(maSanPham, dungTich, giaBan);
         }
 
         private void pbThoat_Click(object sender, EventArgs e)

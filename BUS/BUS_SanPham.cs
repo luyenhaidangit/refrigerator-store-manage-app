@@ -20,11 +20,11 @@ namespace BUS
         {
             return dal_ch.kiemtramatrung(ma);
         }
-        public bool ThemCH(CanHo ch)
+        public bool ThemCH(SanPham ch)
         {
             return dal_ch.ThemCH(ch);
         }
-        public bool SuaCH(CanHo ch)
+        public bool SuaCH(SanPham ch)
         {
             return dal_ch.SuaCH(ch);
         }
@@ -32,9 +32,9 @@ namespace BUS
         {
             return dal_ch.XoaCH(ma);
         }
-        public DataTable TimKiem(string sonha, string dientich, string giaban)
+        public DataTable TimKiem(string maSanPham, string dungTich, string giaban)
         {
-            return dal_ch.TimKiemCH(sonha, dientich, giaban);
+            return dal_ch.TimKiemCH(maSanPham, dungTich, giaban);
         }
     }
 }

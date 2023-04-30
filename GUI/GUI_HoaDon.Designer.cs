@@ -140,6 +140,7 @@ namespace Cao_Van_Dan
             this.dgvcthdb.Size = new System.Drawing.Size(400, 162);
             this.dgvcthdb.TabIndex = 23;
             this.dgvcthdb.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcthdb_CellClick);
+            this.dgvcthdb.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcthdb_CellContentClick);
             // 
             // btnXoaCT
             // 

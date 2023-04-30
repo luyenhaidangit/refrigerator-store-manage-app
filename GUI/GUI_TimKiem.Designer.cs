@@ -111,9 +111,9 @@ namespace Cao_Van_Dan
             this.label2.Location = new System.Drawing.Point(9, 41);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Số nhà:";
+            this.label2.Text = "Mã SP:";
             // 
             // label3
             // 
@@ -121,9 +121,9 @@ namespace Cao_Van_Dan
             this.label3.Location = new System.Drawing.Point(9, 74);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Diện tích:";
+            this.label3.Text = "Dung tích:";
             // 
             // txtmasp
             // 
@@ -187,7 +187,7 @@ namespace Cao_Van_Dan
             this.groupBox1.Size = new System.Drawing.Size(194, 185);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tìm kiếm căn hộ";
+            this.groupBox1.Text = "Tìm kiếm sản phẩm";
             // 
             // label12
             // 
@@ -434,9 +434,9 @@ namespace Cao_Van_Dan
             this.label11.Location = new System.Drawing.Point(8, 67);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(44, 13);
+            this.label11.Size = new System.Drawing.Size(74, 13);
             this.label11.TabIndex = 2;
-            this.label11.Text = "Số nhà:";
+            this.label11.Text = "Mã sản phẩm:";
             // 
             // txtmasp_cthdb
             // 
